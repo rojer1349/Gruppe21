@@ -5,17 +5,17 @@
     margin:      0 auto;
     padding:     0 20px;
     box-sizing:  border-box;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 .text-container{
+    -webkit-column-count:  1;
+    -webkit-column-gap:    2%;
+    -moz-column-count:     1;
+    -moz-column-gap:       2%;
+    column-count:          1;
+    column-gap:            2%;
     border:                1px solid #6dc32c;
     box-sizing:            border-box;
-    -webkit-column-count:  3;
-    -webkit-column-gap:    3%;
-    -moz-column-count:     3;
-    -moz-column-gap:       3%;
-    column-count:          3;
-    column-gap:            3%;
 }
 .text-container p{
     margin:      auto;
@@ -30,43 +30,63 @@ a:hover{
     color:            lightgray;
 }
 header {
-    z-index:     999;
+}
+nav {
     position:    fixed;
     top:         0;
     left:        0;
     width:       100%;
-    margin-top:  0;
-    padding:     28px;
-    color:       #ffffff;
     height:      55 px;
     box-shadow:  1px 1px 2px #888888;
     background:  -webkit-linear-gradient(#d1d1d1, #f0f0f0);
     background:  -o-linear-gradient(#d1d1d1, #f0f0f0);
     background:  -moz-linear-gradient(#d1d1d1, #f0f0f0);
     background:  linear-gradient(#d1d1d1, #f0f0f0);
+    color: #766666;
 }
-
-nav {
+nav ul {
+    list-style-type:  none;
+    display:          inline;
+}
+nav li:hover{
+    background: #cccccc;
+}
+nav li {
+    float:           left;
+    width:           10%;
+    padding-top:     35px;
+    padding-bottom:  15px;
+    border-left:     1px solid #cccccc;
+    padding-left:    0;
+    padding-right:   0;
+    margin:          0;
+}
+nav li:last-child{
+    border-right: 1px solid #cccccc;
 }
 article {
 }
 
 /* to not display full table use table:nth‐child(n+3){display:none} after specific size */
 /*Phone*/
-@media screen and (max-width: 320px) {
-    -webkit-column-count:  1;
-    -webkit-column-gap:    3%;
-    -moz-column-count:     1;
-    -moz-column-gap:       3%;
-    column-count:          1;
-    column-gap:            3%;
+@media all and (min-width: 768px) {
+.text-container{
+    -webkit-column-count:  2;
+    -webkit-column-gap:    4%;
+    -moz-column-count:     2;
+    -moz-column-gap:       4%;
+    column-count:          2;
+    column-gap:            4%;
+}
 }
 /*Tablet*/
-@media screen and (max-width: 768px) {
-    -webkit-column-count:  2;
+@media all and (min-width: 900px){
+.text-container{
+    -webkit-column-count:  3;
     -webkit-column-gap:    3%;
-    -moz-column-count:     2;
+    -moz-column-count:     3;
     -moz-column-gap:       3%;
-    column-count:          2;
+    column-count:          3;
     column-gap:            3%;
+}
 }
