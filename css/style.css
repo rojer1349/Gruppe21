@@ -1,0 +1,72 @@
+.a-container {
+    position:    relative;
+    width:       100%;
+    max-width:   1170px;
+    margin:      0 auto;
+    padding:     0 20px;
+    box-sizing:  border-box;
+    margin-top: 70px;
+}
+.text-container{
+    border:                1px solid #6dc32c;
+    box-sizing:            border-box;
+    -webkit-column-count:  3;
+    -webkit-column-gap:    3%;
+    -moz-column-count:     3;
+    -moz-column-gap:       3%;
+    column-count:          3;
+    column-gap:            3%;
+}
+.text-container p{
+    margin:      auto;
+    padding:     1em;
+    text-align:  justify;
+}
+a{
+    color: gray;
+}
+a:hover{
+    text-decoration:  underline;
+    color:            lightgray;
+}
+header {
+    z-index:     999;
+    position:    fixed;
+    top:         0;
+    left:        0;
+    width:       100%;
+    margin-top:  0;
+    padding:     28px;
+    color:       #ffffff;
+    height:      55 px;
+    box-shadow:  1px 1px 2px #888888;
+    background:  -webkit-linear-gradient(#d1d1d1, #f0f0f0);
+    background:  -o-linear-gradient(#d1d1d1, #f0f0f0);
+    background:  -moz-linear-gradient(#d1d1d1, #f0f0f0);
+    background:  linear-gradient(#d1d1d1, #f0f0f0);
+}
+
+nav {
+}
+article {
+}
+
+/* to not display full table use table:nth‐child(n+3){display:none} after specific size */
+/*Phone*/
+@media screen and (max-width: 320px) {
+    -webkit-column-count:  1;
+    -webkit-column-gap:    3%;
+    -moz-column-count:     1;
+    -moz-column-gap:       3%;
+    column-count:          1;
+    column-gap:            3%;
+}
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    -webkit-column-count:  2;
+    -webkit-column-gap:    3%;
+    -moz-column-count:     2;
+    -moz-column-gap:       3%;
+    column-count:          2;
+    column-gap:            3%;
+}
