@@ -30,8 +30,6 @@ a:hover{
     color:            lightgray;
 }
 header {
-}
-nav {
     position:    fixed;
     top:         0;
     left:        0;
@@ -42,7 +40,8 @@ nav {
     background:  -o-linear-gradient(#d1d1d1, #f0f0f0);
     background:  -moz-linear-gradient(#d1d1d1, #f0f0f0);
     background:  linear-gradient(#d1d1d1, #f0f0f0);
-    color: #766666;
+}
+nav {
 }
 nav ul {
     list-style-type:  none;
@@ -53,16 +52,44 @@ nav li:hover{
 }
 nav li {
     float:           left;
-    width:           10%;
+    text-align: center;
+    width:           12%;
     padding-top:     35px;
     padding-bottom:  15px;
     border-left:     1px solid #cccccc;
     padding-left:    0;
     padding-right:   0;
-    margin:          0;
+    margin:auto;
 }
 nav li:last-child{
     border-right: 1px solid #cccccc;
+}
+.nav_logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    float:left;
+    background: url(images/logo.png) no-repeat 50% 50%;
+    width: 150px;
+    height: 100px;
+}
+#logo {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 85px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+#logo img{
+    width: 150px;
+    padding-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+#logo img:hover{
+    margin-top: -80px;
 }
 article {
 }
