@@ -16,7 +16,9 @@ h1 {
     margin:      0 auto;
     padding:     0 20px;
     box-sizing:  border-box;
-    margin-top:  130px;
+}
+#first-container {
+    margin-top: 130px;
 }
 #last-container {
     padding-bottom: 43px;
@@ -51,7 +53,7 @@ a:hover{
 }
 header {
     position:    fixed;
-    z-index: 999999;
+    z-index:     999999;
     top:         0;
     left:        0;
     width:       100%;
@@ -64,17 +66,17 @@ header {
 }
 nav {
 }
-nav ul {
-    padding: 0;
-    margin: 0 auto;
+nav > ul {
+    padding:          0;
+    margin:           0 auto;
     list-style-type:  none;
     display:          inline;
 }
-nav li:hover{
+nav > ul li:hover{
     background: #cccccc;
     transition: all 0.2s ease;
 }
-nav li {
+nav > ul li {
     float:           left;
     text-align:      center;
     width:           9%;
@@ -85,7 +87,7 @@ nav li {
     padding-right:   0;
     margin:          auto;
 }
-nav li:last-child {
+nav > ul li:last-child {
     border-right: 1px solid #cccccc;
 }
 nav a {
@@ -93,12 +95,9 @@ nav a {
     text-decoration:  none;$
 }
 nav a:hover {
-    color: black;
-    transition: all 0.2s ease;
+    color:       black;
+    transition:  all 0.2s ease;
 }
-nav a#pull {
-    display: none;
-}  
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -158,16 +157,16 @@ footer {
     margin-right:  auto;
 }
 footer #left-footer {
-    float:      left;
+    float: left;
 }
 footer #right-footer{
     text-align:  right;
     float:       right;
 }
 table {
-    width:       100%;
-    text-align:  left;
-    border-collapse:collapse;
+    width:            100%;
+    text-align:       left;
+    border-collapse:  collapse;
 }
 table thead th{
     padding-bottom:  5px;
@@ -185,8 +184,8 @@ table tbody tr{
     color: #6dc32a;
 }
 #sort-up:hover {
-    color: lightgreen;
-    text-decoration: none;
+    color:            lightgreen;
+    text-decoration:  none;
 }
 #sort-down {
     color: #6dc32a;
@@ -212,6 +211,43 @@ table tbody tr{
     font-weight:      bold;
     text-decoration:  none;
 }
+.modalDialog {
+    position:    fixed;
+    top:         72px;
+    right:       0;
+    bottom:      0;
+    left:        0;
+    z-index:     99999;
+    opacity:     0;
+    transition:  opacity 400ms ease-in;
+    height:      100%;
+    width:       100%;
+}
+.modalDialog:target{
+    opacity:         1;
+    pointer-events:  auto;
+}
+.modalDialog > div {
+    position:       relative;
+    margin:         0;
+    padding:        0;
+    background:     #fff;
+    height: 10.2em;
+
+}
+#small-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#small-nav li {
+    width: 100%;
+    margin-left: 5px;
+    padding: 0;
+}
+#small-nav li:hover {
+    background: lightgray;
+}
 
 @media all and (max-width: 768px) {
 th:nth-child(n+5) {
@@ -220,25 +256,17 @@ th:nth-child(n+5) {
 td:nth-child(n+5) {
     display: none;
 }
-nav {
-    border-bottom: 0;
+#small-nav{
+    display: block;
 }
-nav ul {
-    display:  none;
-    height:   auto;
+#big-nav {
+    display: none;
 }
-nav a#pull {
-    float:    right;
-    display:  block;
-    margin:   10px;
-}
-nav a#pull:after {
-    content:   "";
-    width:     30px;
-    height:    30px;
-    position:  absolute;
-    right:     15px;
-    top:       10px;
+#small-nav > a i {
+    position:  fixed;
+    top:       5px;
+    right:     5px;
+    margin:    5px;
 }
 }
 @media all and (min-width: 768px) {
@@ -250,7 +278,7 @@ nav a#pull:after {
     column-count:          2;
     column-gap:            4%;
 }
-nav i{
+#small-nav {
     display: none;
 }
 }
