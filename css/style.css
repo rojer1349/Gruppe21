@@ -18,10 +18,10 @@ h1 {
     box-sizing:  border-box;
     margin-top:  130px;
 }
-#last-container{
+#last-container {
     padding-bottom: 43px;
 }
-.text-container{
+.text-container {
     -webkit-column-count:  1;
     -webkit-column-gap:    2%;
     -moz-column-count:     1;
@@ -31,10 +31,16 @@ h1 {
     border:                1px solid #6dc32c;
     box-sizing:            border-box;
 }
-.text-container p{
+.text-container p {
     margin:      auto;
     padding:     1em;
     text-align:  justify;
+}
+.text-container p a {
+    color: lightgreen;
+}
+.text-container a:hover {
+    color: darkgreen;
 }
 a{
     color: gray;
@@ -59,6 +65,8 @@ header {
 nav {
 }
 nav ul {
+    padding: 0;
+    margin: 0 auto;
     list-style-type:  none;
     display:          inline;
 }
@@ -88,6 +96,20 @@ nav a:hover {
     color: black;
     transition: all 0.2s ease;
 }
+nav a#pull {
+    display: none;
+}  
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
 .nav_logo{
     position:    fixed;
     top:         0;
@@ -97,7 +119,7 @@ nav a:hover {
     width:       150px;
     height:      100px;
 }
-#logo {
+.logo {
     display:   block;
     float:     left;
     width:     250px;
@@ -106,13 +128,13 @@ nav a:hover {
     padding:   0;
     margin:    0;
 }
-#logo img{
+.logo img{
     width:         150px;
     padding-left:  20px;
     padding:       0;
     margin:        0;
 }
-#logo img:hover{
+.logo img:hover{
     margin-top: -80px;
 }
 footer {
@@ -127,12 +149,20 @@ footer {
     background:   white;
     padding-top:  10px;
     margin-top:   10px;
+    font-size:    12px;
 }
-footer p{
+.footer-container {
     border-top:    1px solid #6cc22d;
     max-width:     1170px;
     margin-left:   auto;
     margin-right:  auto;
+}
+footer #left-footer {
+    float:      left;
+}
+footer #right-footer{
+    text-align:  right;
+    float:       right;
 }
 table {
     width:       100%;
@@ -162,8 +192,25 @@ table tbody tr{
     color: #6dc32a;
 }
 #sort-down:hover {
-    color: lightgreen;
-    text-decoration: none;
+    color:            lightgreen;
+    text-decoration:  none;
+}
+.filter ul{
+    list-style-type:  none;
+    color:            gray;
+    font-weight:      bold;
+}
+.filter ul li{
+    display:       inline;
+    padding:       2px;
+    border-right:  1px solid gray;
+}
+.filter ul li:last-child{
+    border-right: none;
+}
+.filter li a:hover{
+    font-weight:      bold;
+    text-decoration:  none;
 }
 
 @media all and (max-width: 768px) {
@@ -172,6 +219,26 @@ th:nth-child(n+5) {
 }
 td:nth-child(n+5) {
     display: none;
+}
+nav {
+    border-bottom: 0;
+}
+nav ul {
+    display:  none;
+    height:   auto;
+}
+nav a#pull {
+    float:    right;
+    display:  block;
+    margin:   10px;
+}
+nav a#pull:after {
+    content:   "";
+    width:     30px;
+    height:    30px;
+    position:  absolute;
+    right:     15px;
+    top:       10px;
 }
 }
 @media all and (min-width: 768px) {
@@ -182,6 +249,9 @@ td:nth-child(n+5) {
     -moz-column-gap:       4%;
     column-count:          2;
     column-gap:            4%;
+}
+nav i{
+    display: none;
 }
 }
 @media all and (max-width: 900px){
@@ -200,5 +270,8 @@ td:nth-child(n+7){
     -moz-column-gap:       3%;
     column-count:          3;
     column-gap:            3%;
+}
+nav i{
+    display: none;
 }
 }

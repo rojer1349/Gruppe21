@@ -6,6 +6,7 @@
   <meta name="description" content="WME Übung 1 Gruppe#21">
   <meta name="keywords" content="HTML,CSS,JavaScript">
   <meta name="author" content="Jan Bickel">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300"  type="text/css">
@@ -13,11 +14,11 @@
 </head>
 <body>
   <header>
-      <nav>
-        <div id="logo">
+      <nav class="clearfix">
+        <div class="logo">
           <a href="#"><img src="images/logo.png"></img></a>
         </div>
-        <ul>
+        <ul class="clearfix">
           <a href="#"><li><i class="fa fa-list"></i> A1 - Table</li></a>
           <a href="#"><li><i class="fa fa-list"></i> A2 - Parse</li></a>
           <a href="#"><li><i class="fa fa-list"></i> A2 - Save</li></a>
@@ -25,15 +26,25 @@
           <a href="#"><li><i class="fa fa-list"></i> A3 - Reset</li></a>
           <a href="#"><li><i class="fa fa-list"></i> A4 - Vis</li></a>
         </ul>
+        <a href="#" id="pull"><i class="fa fa-list"></i></a>
       </nav>
   </header>
   <article class="a-container">
   <h1>World Data Overview...</h1>
   <div class="text-container">
-    <p>Mavericks reality distortion gradients attenuation. Thought through and through notifications transparency game center multitasking aluminum advanced desktop operating system genius bar. This changes everything designed by Apple in California passbook. Control center photos all-new design SDK technology clock. Simplicity is actually quite complicated. Functional layers 9:41am partly cloudy minimalism. Dock airdrop slide to answer music. Video multitouch iTunes compass. Harmonious finder grid system retina animation compressor experience keynote. Redesign services API notes system preferences. Features siri flat buttons airplane mode calculator. Missed call cover flow compare models. Wi-Fi apple care volume reminder controls. My stations folders mac power ultimate upgrade. Shop online quicktime trackpad server aperture rumors education safari one to one. Remote desktop motion business. Backlit keyboard chess phone airport extreme support iPad. Accessories magsafe terminal final cut pro. Featured TV shows downloads digital color meter. Glossy tech specs bluetooth manuals. OpenGL products FaceTime free shipping recycling mission control applications.</p>
+    <p>Mavericks reality distortion gradients attenuation. Thought through and through notifications transparency game center multitasking aluminum advanced desktop operating system genius bar. This changes everything designed by Apple in California passbook. Control center photos all-new design SDK technology clock. Simplicity is actually quite complicated. Functional layers 9:41am partly cloudy minimalism. Dock airdrop slide to answer music. Video multitouch iTunes compass. Harmonious finder grid system retina animation compressor experience keynote. Redesign services API notes system preferences. Features siri flat buttons airplane mode calculator. Missed call cover flow compare models. Wi-Fi apple care volume reminder controls. My stations folders mac power ultimate upgrade. Shop online quicktime trackpad server aperture rumors education safari one to one. Remote desktop motion business. Backlit keyboard chess phone airport extreme support iPad. Accessories magsafe terminal final cut pro. Featured TV shows downloads digital color meter. Glossy tech specs bluetooth manuals. OpenGL products FaceTime free shipping recycling mission control applications.  From: <a href="#">John Doe</a></p>
   </div>
   </article>
   <article id="last-container" class="a-container">
+  <div class="filter">
+    <ul>Show/Hide:
+      <li><a href="#">birth rate </a></li>
+      <li><a href="#">cellphones </a></li>
+      <li><a href="#">children / woman </a></li>
+      <li><a href="#">electric usage </a></li>
+      <li><a href="#">internet usage </a></li>
+    </ul>
+  </div>
   <table>
     <thead>
       <tr>
@@ -125,10 +136,27 @@
       </tr>
     </tbody>
   </table>
+  <div class="filter">
+    <ul>Show/Hide:
+      <li><a href="#">birth rate </a></li>
+      <li><a href="#">cellphones </a></li>
+      <li><a href="#">children / woman </a></li>
+      <li><a href="#">electric usage </a></li>
+      <li><a href="#">internet usage </a></li>
+    </ul>
+  </div>
   </article>
-  <div class="spacer"></div>
   <footer>
-    <p>Jan Bickel Gruppe#21</p>
+    <div class="footer-container">
+      <div id="left-footer">
+        <div>Copyright &copy 2015 world_data</div>
+        <div>First course exercise <b>HTML, CSS and JS</b> of lecture Web and Multimedia Engeneering. </div>
+      </div>
+      <div id="right-footer">
+        <div>This Solution has been created by: </div>
+        <div>Jan Bickel (sXXXXXXX)- Team 21</div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
