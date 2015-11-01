@@ -1,3 +1,14 @@
+body {
+    font-family:  'Roboto', sans-serif;
+    font-weight:  400;
+    font-size:    14px;
+    line-height:  145%;
+}
+h1 {
+    font-family:  'Roboto', sans-serif;
+    font-weight:  300;
+    font-size:    44px;
+}
 .a-container {
     position:    relative;
     width:       100%;
@@ -5,7 +16,10 @@
     margin:      0 auto;
     padding:     0 20px;
     box-sizing:  border-box;
-    margin-top: 90px;
+    margin-top:  130px;
+}
+#last-container{
+    padding-bottom: 43px;
 }
 .text-container{
     -webkit-column-count:  1;
@@ -31,6 +45,7 @@ a:hover{
 }
 header {
     position:    fixed;
+    z-index: 999999;
     top:         0;
     left:        0;
     width:       100%;
@@ -49,53 +64,116 @@ nav ul {
 }
 nav li:hover{
     background: #cccccc;
+    transition: all 0.2s ease;
 }
 nav li {
     float:           left;
-    text-align: center;
-    width:           12%;
+    text-align:      center;
+    width:           9%;
     padding-top:     35px;
-    padding-bottom:  15px;
+    padding-bottom:  33px;
     border-left:     1px solid #cccccc;
     padding-left:    0;
     padding-right:   0;
-    margin:auto;
+    margin:          auto;
 }
-nav li:last-child{
+nav li:last-child {
     border-right: 1px solid #cccccc;
 }
+nav a {
+    color:            #656565;
+    text-decoration:  none;$
+}
+nav a:hover {
+    color: black;
+    transition: all 0.2s ease;
+}
 .nav_logo{
-    position: fixed;
-    top: 0;
-    left: 0;
-    float:left;
-    background: url(images/logo.png) no-repeat 50% 50%;
-    width: 150px;
-    height: 100px;
+    position:    fixed;
+    top:         0;
+    left:        0;
+    float:       left;
+    background:  url(images/logo.png) no-repeat 50% 50%;
+    width:       150px;
+    height:      100px;
 }
 #logo {
-    display: block;
-    float: left;
-    width: 250px;
-    height: 85px;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
+    display:   block;
+    float:     left;
+    width:     250px;
+    height:    85px;
+    overflow:  hidden;
+    padding:   0;
+    margin:    0;
 }
 #logo img{
-    width: 150px;
-    padding-left: 20px;
-    padding: 0;
-    margin: 0;
+    width:         150px;
+    padding-left:  20px;
+    padding:       0;
+    margin:        0;
 }
 #logo img:hover{
     margin-top: -80px;
 }
-article {
+footer {
+    position:     fixed;
+    z-index:      99999;
+    font-size:    12px;
+    height:       40px;
+    left:         0;
+    bottom:       0;
+    color:        #656472;
+    width:        100%;
+    background:   white;
+    padding-top:  10px;
+    margin-top:   10px;
+}
+footer p{
+    border-top:    1px solid #6cc22d;
+    max-width:     1170px;
+    margin-left:   auto;
+    margin-right:  auto;
+}
+table {
+    width:       100%;
+    text-align:  left;
+    border-collapse:collapse;
+}
+table thead th{
+    padding-bottom:  5px;
+    font-size:       19px;
+    font-weight:     bold;
+    border-bottom:   2px solid #cdcdcd;
+}
+table thead th i{
+}
+table tbody tr{
+    height: 2.2em;
+    margin: auto;
+}
+#sort-up {
+    color: #6dc32a;
+}
+#sort-up:hover {
+    color: lightgreen;
+    text-decoration: none;
+}
+#sort-down {
+    color: #6dc32a;
+}
+#sort-down:hover {
+    color: lightgreen;
+    text-decoration: none;
 }
 
-/* to not display full table use table:nth‐child(n+3){display:none} after specific size */
-/*Phone*/
+@media all and (max-width: 768px) {
+th:nth-child(n+5) {
+    display: none;
+}
+td:nth-child(n+5) {
+    display: none;
+}
+}
 @media all and (min-width: 768px) {
 .text-container{
     -webkit-column-count:  2;
@@ -106,7 +184,14 @@ article {
     column-gap:            4%;
 }
 }
-/*Tablet*/
+@media all and (max-width: 900px){
+th:nth-child(n+7) {
+    display: none;
+}
+td:nth-child(n+7){
+    display: none;
+}
+}
 @media all and (min-width: 900px){
 .text-container{
     -webkit-column-count:  3;

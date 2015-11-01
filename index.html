@@ -8,32 +8,127 @@
   <meta name="author" content="Jan Bickel">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300"  type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
       <nav>
         <div id="logo">
-          <img src="images/logo.png"></img>
+          <a href="#"><img src="images/logo.png"></img></a>
         </div>
         <ul>
-          <li>A1 - Table</li>
-          <li>A2 - Parse</li>
-          <li>A2 - Print</li>
-          <li>A3 - Reset</li>
-          <li>A4 - Vis</li>
+          <a href="#"><li><i class="fa fa-list"></i> A1 - Table</li></a>
+          <a href="#"><li><i class="fa fa-list"></i> A2 - Parse</li></a>
+          <a href="#"><li><i class="fa fa-list"></i> A2 - Save</li></a>
+          <a href="#"><li><i class="fa fa-list"></i> A2 - Print</li></a>
+          <a href="#"><li><i class="fa fa-list"></i> A3 - Reset</li></a>
+          <a href="#"><li><i class="fa fa-list"></i> A4 - Vis</li></a>
         </ul>
       </nav>
   </header>
   <article class="a-container">
   <h1>World Data Overview...</h1>
   <div class="text-container">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.  </p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.  </p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.  </p>
+    <p>Mavericks reality distortion gradients attenuation. Thought through and through notifications transparency game center multitasking aluminum advanced desktop operating system genius bar. This changes everything designed by Apple in California passbook. Control center photos all-new design SDK technology clock. Simplicity is actually quite complicated. Functional layers 9:41am partly cloudy minimalism. Dock airdrop slide to answer music. Video multitouch iTunes compass. Harmonious finder grid system retina animation compressor experience keynote. Redesign services API notes system preferences. Features siri flat buttons airplane mode calculator. Missed call cover flow compare models. Wi-Fi apple care volume reminder controls. My stations folders mac power ultimate upgrade. Shop online quicktime trackpad server aperture rumors education safari one to one. Remote desktop motion business. Backlit keyboard chess phone airport extreme support iPad. Accessories magsafe terminal final cut pro. Featured TV shows downloads digital color meter. Glossy tech specs bluetooth manuals. OpenGL products FaceTime free shipping recycling mission control applications.</p>
   </div>
   </article>
+  <article id="last-container" class="a-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th><a id="sort-up"class="fa fa-angle-up"></a>
+            <a id="sort-down"><i class="fa fa-angle-down"></i></a> Country</th>
+        <th>birth rate / 1000</th>
+        <th>cellphones / 100</th>
+        <th>children / woman</th>
+        <th>electric usage</th>
+        <th>internet usage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td><td>Brazil</td><td>16.405</td><td>90.01936334</td><td>1.862</td><td>2201.808724</td><td>4424.758692</td>
+      </tr>
+      <tr>
+        <td>002</td><td>Canada</td><td>10.625</td><td>70.70997244</td><td>1.668</td><td>15119.76414</td><td>25069.86915</td>
+      </tr>
+      <tr>
+        <td>003</td><td>Chile</td><td>97.01862561</td><td>3276.06449</td><td>6451.631126</td><td>2201.808724</td><td>4424.758692</td>
+      </tr>
+      <tr>
+        <td>004</td><td>China</td><td>13.536</td><td>55.97490921</td><td>2632.724637</td><td>2208.403948</td><td>2407.403948</td>
+      </tr>
+      <tr>
+        <td>005</td><td>Colombia</td><td>92.34584564</td><td>1041.994137</td><td>3137.695335</td><td>6.900703626</td><td>92.13686385</td>
+      </tr>
+      <tr>
+        <td>006</td><td>Ecuador </td><td>20.989 </td><td>92.84925653  </td><td>2.69 </td><td>1078.038961</td><td>1692.067197 </td>
+      </tr>
+      <tr>
+        <td>007</td><td>Egypt </td><td>24.83 </td><td>69.43661504 </td><td>1607.918763 </td><td>1911.964501 </td><td>2201.808724</td>
+      </tr>
+      <tr>
+        <td>008</td><td>Finland</td><td>11.127</td><td>144.1530224</td><td>1.86</td><td>15241.61194</td><td>26205.68832</td>
+      </tr>
+      <tr>
+        <td>009</td><td>France</td><td>12.21 </td><td>95.44434226</td><td>1.978</td><td>7339.946832</td><td>22508.76261</td>
+      </tr>
+      <tr>
+        <td>010</td><td>Germany</td><td>8.136</td><td>127.4188883</td><td>1.376</td><td>6753.05764</td><td>24368.19561</td>
+      </tr>
+      <tr>
+        <td>011</td><td>Iceland</td><td>14.738</td><td>107.6604456</td><td>2.123 </td><td>51259.18763</td><td>35310.97441</td>
+      </tr>
+      <tr>
+        <td>012</td><td>Iraq </td><td>31.585</td><td>65.47478839</td><td>4.276 </td><td>1086.323768</td><td>24368.19561</td>
+      </tr>
+      <tr>
+        <td>013</td><td>Japan</td><td>8.201</td><td>91.8955442</td><td>1.359</td><td>7838.005685 </td><td>38242.02429</td>
+      </tr>
+      <tr>
+        <td>014</td><td>Kazakhstan</td><td>19.775</td><td>107.7147692</td><td>2.537</td><td>4447.142293</td><td>2345.86415</td>
+      </tr>
+      <tr>
+        <td>015</td><td>Mexico</td><td>19.091</td><td>74.25785259</td><td>2.313</td><td>1869.82352</td><td>5875.619997</td>
+      </tr>
+      <tr>
+        <td>016</td><td>New Zealand</td><td>13.831</td><td>108.7301521</td><td>2.125</td><td>9375.550304</td><td>38242.02429</td>
+      </tr>
+      <tr>
+        <td>017</td><td>Nigeria</td><td>40.134</td><td>48.23561006 </td><td>6.021</td><td>119.8151486</td><td>513.5003377</td>
+      </tr>
+      <tr>
+        <td>018</td><td>Peru</td><td>21.342</td><td>85.86901405</td><td>2.545</td><td>1043.052601</td><td>2955.186222</td>
+      </tr>
+      <tr>
+        <td>019</td><td>Russia</td><td>10.828</td><td>161.1162887</td><td>1.537</td><td>6132.978648</td><td>2806.41483</td>
+      </tr>
+      <tr>
+        <td>020</td><td>Saudi Arabia</td><td>23.569</td><td>167.3474553</td><td>2.898</td><td>7430.743897</td><td>9294.355996</td>
+      </tr>
+      <tr>
+        <td>021</td><td>South Africa</td><td>22.113</td><td>93.33587369</td><td>2.5</td><td>4532.021902</td><td>3697.67368</td>
+      </tr>
+      <tr>
+        <td>022</td><td>Sweden</td><td>11.72 </td><td>112.1241184</td><td>1.937</td><td>14143.01101 </td><td>30885.45914</td>
+      </tr>
+      <tr>
+        <td>023</td><td>United Arab Emirates</td><td>14.027</td><td>153.7997194</td><td>1.903</td><td>9998.291079</td><td>22507.00157</td>
+      </tr>
+      <tr>
+        <td>024</td><td>United Kingdom</td><td>12.195</td><td>130.1742603</td><td>1.89</td><td>5685.635995</td><td>27933.77767</td>
+      </tr>
+      <tr>
+        <td>025</td><td>United States</td><td>14.191</td><td>89.14911634</td><td>2.002</td><td>12913.71143</td><td>36539.22823 </td>
+      </tr>
+    </tbody>
+  </table>
+  </article>
+  <div class="spacer"></div>
   <footer>
-    Jan Bickel Gruppe#21
+    <p>Jan Bickel Gruppe#21</p>
   </footer>
 </body>
 </html>
