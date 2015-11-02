@@ -30,23 +30,27 @@ function sort_table(x){
     }
 }
 
+// show/hide table cols
 function show_hide_col(index){
-    var tbl = document.getElementById("world_data");
-    if(tbl != null) {
-        if (index < 0 || index >= tbl.rows.length - 1) {
-            return;
+    index++;
+    // select specific col
+    var head_col = document.querySelectorAll("th:nth-child("+index+")");
+    var body_col = document.querySelectorAll("td:nth-child("+index+")");
+    // just one element -> no need for a for
+    // toggle display
+    if(head_col[0].style.display == "none"){
+        head_col[0].style.display = "";
+    }
+    else{
+        head_col[0].style.display = "none";
+    }
+    // for through the whole col
+    for(var i = 0; i < body_col.length; i++){
+        if(body_col[i].style.display == "none"){
+            body_col[i].style.display = "";
         }
-        for(var i = 0; i < tbl.rows.length; i++) {
-            for (var j = 0; j < tbl.rows[i].cells.length; j++) {
-                if(j == index){
-                    if(tbl.rows[i].cells[j].style.display == ""){
-                        tbl.rows[i].cells[j].style.display = "none";
-                    }
-                    else{
-                        tbl.rows[i].cells[j].style.display = "";
-                    }
-                }
-            }
+        else{
+            body_col[i].style.display = "none";
         }
     }
 }
