@@ -36,18 +36,22 @@ function show_hide_col(index){
     // select specific col
     var head_col = document.querySelectorAll("th:nth-child("+index+")");
     var body_col = document.querySelectorAll("td:nth-child("+index+")");
+
+    // get real display style
+    var current_style = window.getComputedStyle(head_col[0], null).getPropertyValue("display");
+
     // just one element -> no need for a for
     // toggle display
-    if(head_col[0].style.display == "none"){
-        head_col[0].style.display = "";
+    if(current_style == "none" || current_style == ""){
+        head_col[0].style.display = "table-cell";
     }
     else{
         head_col[0].style.display = "none";
     }
     // for through the whole col
     for(var i = 0; i < body_col.length; i++){
-        if(body_col[i].style.display == "none"){
-            body_col[i].style.display = "";
+        if(current_style == "none" || current_style == ""){
+            body_col[i].style.display = "table-cell";
         }
         else{
             body_col[i].style.display = "none";
