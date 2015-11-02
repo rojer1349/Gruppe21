@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300"  type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <script language="javascript" type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
   <header>
@@ -31,7 +33,7 @@
         <div class="logo">
           <a href="#openNav"><img src="images/logo.png"></img></a>
         </div>
-        <a href="#openNav" id="pull"><i class="fa fa-list"></i></a>
+        <a href="#openNav" ><i class="fa fa-list"></i></a>
         <div id="openNav" class="modalDialog">
           <div>
             <ul>
@@ -63,12 +65,12 @@
       <li><a href="#">internet usage </a></li>
     </ul>
   </div>
-  <table>
+  <table id="world_data">
     <thead>
       <tr>
         <th>ID</th>
-        <th><a id="sort-up"class="fa fa-angle-up"></a>
-            <a id="sort-down"><i class="fa fa-angle-down"></i></a> Country</th>
+        <th><a id="sort-up" class="fa fa-angle-up" onclick="sortDataUp()"></a>
+            <a id="sort-down" class="fa fa-angle-down" onclick="sortDataDown()"></a> Country</th>
         <th>birth rate / 1000</th>
         <th>cellphones / 100</th>
         <th>children / woman</th>
