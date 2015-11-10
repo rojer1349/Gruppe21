@@ -42,7 +42,7 @@ class WorldDataParser{
             if( is_array($value) ) {
                 // if key is a index write country
                 if( is_numeric($key) ){
-                    $key = "Country";
+                    $key = "country";
                 }
                 // add subnode $key, this could be an identifier (e.g. id) or country
                 $subnode = $xml_data->addChild($key);
@@ -57,7 +57,7 @@ class WorldDataParser{
     // parse array to xml and save to file
     function saveXML($d_array, $dest){
         // new XML object
-        $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><Countries></Countries>');
+        $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><countries></countries>');
         // parse XML
         $this->array_to_xml($d_array, $xml);
         // open file for write
@@ -67,6 +67,21 @@ class WorldDataParser{
         // close file
         fclose($fh);
         return true;
+    }
+    function printXML(){
+
+        // Load the XML source
+        $xml = new DOMDocument;
+        $xml->load('res/world_data.xml');
+
+        $xsl = new DOMDocument;
+        $xsl->load('res/world_data.xslt');
+
+        // Configure the transformer
+        $proc = new XSLTProcessor();
+        $proc->importStyleSheet($xsl);
+
+        return $proc->transformToXML($xml);
     }
 }
 ?>
