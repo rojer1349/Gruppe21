@@ -8,8 +8,9 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th><a id="sort-up"   class="fa fa-angle-up"   onclick="sort_table(asc)"></a>
-            <a id="sort-down" class="fa fa-angle-down" onclick="sort_table(desc)"></a> Country
+        <th>Country
+            <a id="sort-up"   class="fa fa-angle-up"   onclick="sort_table(asc)"></a>
+            <a id="sort-down" class="fa fa-angle-down" onclick="sort_table(desc)"></a>
         </th>
         <th>birth rate / 1000</th>
         <th>cellphones / 100</th>
