@@ -79,9 +79,15 @@ class WorldDataParser{
 
         // Configure the transformer
         $proc = new XSLTProcessor();
-        $proc->importStyleSheet($xsl);
+        $proc->importStylesheet($xsl);
 
-        return $proc->transformToXML($xml);
+		// xml parce
+		
+		echo $proc->transformToXML($xml);
+		
+		
+
+
     }
 }
 ?>

@@ -18,11 +18,14 @@
 <body>
 <?php
 require_once("class/world_data_parser.php");
+
 $parser = new WorldDataParser();
 $d_array = $parser->parseCSV("res/world_data_v1.csv", 1000, ',');
+
 print("<pre>");
 print_r($d_array);
 print("</pre>");
+
 ?>
 </body>
 </html>
