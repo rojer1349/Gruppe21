@@ -21,7 +21,7 @@
           <a href="#"><img alt="logo" src="images/logo.png"></a>
         </div>
         <ul>
-          <li><a href="#"><i class="fa fa-list"></i> A1 - Table</a></li>
+          <li><a href="index.html"><i class="fa fa-list"></i> A1 - Table</a></li>
           <<li><div class="container"><i class="fa fa-list-ul"  title=" A1 - Table"><a href="parse.php"> A2 - Parse</a></i></div></li>
           <li><div class="container"><i class="fa fa-list-ul"  title=" A1 - Table"><a href="save.php"> A2 - Save</a></i></div></li>
           <li><div class="container"><i class="fa fa-list-ul"  title=" A1 - Table"><a href="print.php">  A2 - Print</a></i></div></li>
@@ -67,7 +67,6 @@
     </ul>
     <br>
   </div>
-   <code>
 <?php
 require_once("class/world_data_parser.php");
 $parser = new WorldDataParser();
@@ -77,10 +76,7 @@ $rv = $parser->saveXML($d_array, "res/world_data.xml");
 $rt = $parser->printXML("res/world_data.xml", "res/world_data.xslt");
 
 print_r($rt);
-
 ?>
-
- </code>
 <footer>
     <div class="footer-container">
       <div id="left-footer">
