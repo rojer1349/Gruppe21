@@ -84,8 +84,6 @@ class WorldDataParser{
 		// xml parce
 		
 		echo $proc->transformToXML($xml);
-		
-		
 
 
     }
